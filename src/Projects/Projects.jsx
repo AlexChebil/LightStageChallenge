@@ -1,28 +1,18 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import Card from "./Card/Card";
 import "./Projects.scss";
 import "./ProjectsMediaQ.scss";
 
-function Projects() {
-  const reqest = "https://jsonplaceholder.typicode.com/users";
-  const [data, setdata] = useState("");
+function Projects({ data }) {
   const [searchValue, setSearchValue] = useState("");
   const inputRef = useRef();
 
-  async function getData() {
-    const rawData = await fetch(reqest);
-    const response = await rawData.json();
-    setdata(response);
-  }
-
-  useEffect(() => {
-    getData();
-  }, []);
+  //console.log(store.getState().length > 1);
 
   return (
     <>
       <div className='inputContainer'>
-        <h3 id='allJobs'>All jobs - {data.length} results </h3>
+        <h3 id='allJobs'>All jobs - {data.getState().length} results </h3>
         <input
           id='searchInput'
           type='search'
@@ -33,18 +23,21 @@ function Projects() {
         />
 
         <datalist id='browsers'>
-          {data &&
-            data.map((entry) => (
-              <option key={Math.random()} value={entry.company.catchPhrase} />
-            ))}
+          {data.getState().length > 1 &&
+            data
+              .getState()
+              .map((entry) => (
+                <option key={Math.random()} value={entry.company.catchPhrase} />
+              ))}
         </datalist>
 
         <hr id='projectsHR' />
       </div>
 
       <div className='gridContainer'>
-        {data &&
+        {data.getState().length > 1 &&
           data
+            .getState()
             .filter((entry) => {
               if (searchValue && searchValue.length === 0) {
                 return entry;
