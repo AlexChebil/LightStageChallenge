@@ -1,0 +1,51 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+    #navText {
+        display: flex;
+        align-items: center;
+
+        :nth-child(n) {
+            margin: 0 .5em;
+        }
+
+        :nth-child(1) {
+            color: whitesmoke;
+        }
+
+    }
+
+    #lightStageLogo {
+        width: 10em;
+        height: auto;
+    }
+
+    #avatar {
+        width: 5em;
+    }
+}
+
+
+.banner {
+    #Banner {
+        width: 100vw;
+        height: 55vh;
+        aspect-ratio: 16/9;
+        filter: opacity(.6);
+
+
+    }
+
+    #bannerText {
+        filter: drop-shadow(10px 10px 6px black);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 45%;
+        left: 50%;
+        font-size: 2.25em;
+        text-align: center;
+    }
+}

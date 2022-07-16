@@ -1,0 +1,27 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    #footerText,
+    #contact {
+        display: flex;
+
+        :nth-child(n) {
+            margin: 1em;
+        }
+    }
+
+    #contact {
+        align-items: center;
+
+        :nth-child(n) {
+            margin: 1em;
+        }
+
+        img {
+            width: 2em;
+        }
+    }
+}
