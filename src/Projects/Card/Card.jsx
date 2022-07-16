@@ -1,5 +1,7 @@
 import React from "react";
 import "./Card.scss";
+import "./CardMediaQ.scss";
+
 function Card({ data }) {
   return (
     <>
@@ -13,14 +15,17 @@ function Card({ data }) {
           <h2>{data.company.catchPhrase} </h2>
 
           <div id='pillsContainer'>
-            {data.company.bs.split(" ").map((entry) => (
-              <div key={Math.random()} id='pill'>
-                <p>{entry}</p>
-              </div>
-            ))}
+            {data.company.bs
+              .split(" ")
+              .slice(0, 3)
+              .map((entry) => (
+                <div key={Math.random()} id='pill'>
+                  <p>{entry}</p>
+                </div>
+              ))}
           </div>
 
-          <hr />
+          <hr id='cardHR' />
         </div>
 
         <div className='footerSection'>

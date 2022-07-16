@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import "./HeaderMediaQ.scss";
 
 function Header() {
   return (

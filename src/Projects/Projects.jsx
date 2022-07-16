@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Card from "./Card/Card";
 import "./Projects.scss";
+import "./ProjectsMediaQ.scss";
 
 function Projects() {
   const reqest = "https://jsonplaceholder.typicode.com/users";
@@ -38,7 +39,7 @@ function Projects() {
             ))}
         </datalist>
 
-        <hr />
+        <hr id='projectsHR' />
       </div>
 
       <div className='gridContainer'>
@@ -49,8 +50,8 @@ function Projects() {
                 return entry;
               } else if (
                 entry.company.catchPhrase
-                  .toLowerCase()
-                  .includes(searchValue.toLowerCase())
+                  .toUpperCase()
+                  .includes(searchValue.toUpperCase())
               ) {
                 return entry;
               }

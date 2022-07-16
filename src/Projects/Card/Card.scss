@@ -24,14 +24,22 @@
         #pillsContainer {
             display: flex;
             justify-content: space-evenly;
+            font-weight: bolder;
         }
 
         #pill {
             background-color: #5078bf;
             padding: 0 1em;
-            border-radius: 1.5em;
+            border-radius: .75em;
             font-weight: bolder;
             border: 2px solid whitesmoke;
+        }
+
+        #cardHR {
+            background-color: #20212358;
+            margin-top: 1.5em;
+            padding: .05em;
+            border: none;
         }
     }
 
@@ -39,5 +47,7 @@
         display: flex;
         justify-content: space-between;
     }
+
+
 
 }

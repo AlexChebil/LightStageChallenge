@@ -1,7 +1,7 @@
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: repeat(3, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 80px;
     justify-items: center;
     transition: 1s all ease-in-out;
@@ -16,7 +16,7 @@
     #searchInput {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 70%;
+        top: 68%;
         left: 50%;
         padding: 1.5em;
         width: 70em;
@@ -26,4 +26,12 @@
         color: #b0b3b5;
         font-weight: bolder;
     }
+}
+
+#projectsHR {
+    width: 95%;
+    padding: .1em;
+    background: #363a42;
+    outline: none;
+    border: none;
 }

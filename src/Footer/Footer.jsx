@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import "./FooterMediaQ.scss";
 
 function Footer() {
   return (

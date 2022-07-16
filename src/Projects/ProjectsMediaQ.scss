@@ -1,0 +1,27 @@
+@media all and(max-width:400px) {
+
+    .inputContainer #searchInput {
+        top: 68% !important;
+        width: 25em !important;
+
+    }
+}
+
+
+@media all and (min-width:360px) and (max-width:500px) {
+
+    .inputContainer #searchInput {
+        top: 65%;
+        width: 28em;
+
+    }
+
+    #allJobs {
+        padding: 2em 0.5em;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+}

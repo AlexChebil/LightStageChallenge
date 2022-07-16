@@ -1,0 +1,24 @@
+@media all and(max-width:400px) {
+    #pill {
+        font-size: .85em;
+    }
+}
+
+
+@media all and (min-width:360px) and (max-width:500px) {
+
+    .card {
+        width: 75vw;
+    }
+
+    .card .middleSection #pill {
+        padding: 0 .25em;
+        border-radius: .75em;
+
+    }
+
+    #pillsContainer {
+
+        font-weight: lighter;
+    }
+}

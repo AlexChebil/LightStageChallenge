@@ -1,0 +1,18 @@
+@media all and (min-width:360px) and (max-width:500px) {
+    .flexContainer {
+        font-size: .8em;
+        margin: 1em 0;
+    }
+
+    #contact {
+        img {
+            display: none;
+        }
+    }
+
+    #footerText {
+        :nth-child(2) {
+            display: none;
+        }
+    }
+}
