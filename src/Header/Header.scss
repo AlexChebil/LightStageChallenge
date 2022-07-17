@@ -31,13 +31,17 @@
 
 
 .banner {
-    #Banner {
+    #BannerBig {
         width: 100vw;
         height: 55vh;
         aspect-ratio: 16/9;
-        filter: opacity(.6);
+        filter: opacity(.8);
+    }
 
-
+    #BannerSmall {
+        width: 100vw;
+        //height: 55vh;
+        filter: opacity(.8);
     }
 
     #bannerText {

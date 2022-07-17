@@ -14,7 +14,7 @@
     }
 
     .banner #bannerText {
-        top: 40%;
+        top: 25%;
         font-size: 1.5em;
 
         h4 {
@@ -24,12 +24,18 @@
 }
 
 @media all and (min-width:601px) and (max-width:1000px) {
+
+    .banner #BannerBig {
+        height: 23.5em;
+    }
+
+
     .nav #navText {
         display: none;
     }
 
     .banner #bannerText {
-        top: 37%;
+        top: 10em;
         white-space: pre;
         font-size: 2em;
     }
