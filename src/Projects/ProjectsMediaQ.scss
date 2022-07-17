@@ -8,7 +8,7 @@
 }
 
 
-@media all and (min-width:360px) and (max-width:600px) {
+@media all and (min-width:320px) and (max-width:600px) {
 
     .inputContainer #searchInput {
         top: 65%;
@@ -22,6 +22,14 @@
 
     .gridContainer {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+}
+
+@media all and (min-width:601px) and (max-width:1000px) {
+    .inputContainer #searchInput {
+        top: 67%;
+        width: 47em;
 
     }
 }
