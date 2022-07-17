@@ -6,6 +6,8 @@
     box-shadow: 5px 5px 20px black;
     border-top: 4px solid #b0b3b5;
     border-radius: .75em;
+    transition: .75s all ease-in-out;
+
 
     .upperSection {
         margin: 1em;
@@ -47,7 +49,9 @@
         display: flex;
         justify-content: space-between;
     }
+}
 
-
-
+.card:hover {
+    box-shadow: 0px 3px 15px 12px rgba(0, 0, 0, 0.6);
+    transition: .25s all ease-in-out;
 }

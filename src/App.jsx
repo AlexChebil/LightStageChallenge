@@ -51,6 +51,9 @@ function App() {
       <Provider store={store}>
         <Header />
         <Projects data={store} />
+        {/* it's better to directly feed this component with data from the state
+        but I'm using Redux's store instead to comply with the technical 
+        requirements*/}
         <Footer />
       </Provider>
     </>
