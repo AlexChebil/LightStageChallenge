@@ -27,8 +27,17 @@ function Card({ data }) {
         className='card'
       >
         <div className='upperSection'>
-          <h4>{data.name} </h4>
-          <h4>{[data.address.street, ", ", data.address.city, "📍"]} </h4>
+          <div>
+            <img
+              id='projectAvatar'
+              src={require("../../Images/projectAvatar.png")}
+              alt=''
+            />
+          </div>
+          <div>
+            <h4>{data.name} </h4>
+            <h4>{[data.address.street, ", ", data.address.city, "📍"]} </h4>
+          </div>
         </div>
 
         <div className='middleSection'>

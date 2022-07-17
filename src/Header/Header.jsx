@@ -48,6 +48,8 @@ function Header() {
           <h1>Creative motion projects</h1>
           <h4>Discover client work to pitch on.</h4>
         </div>
+
+        <span id='bannerCaption'>Video by Harold Miles</span>
       </div>
     </>
   );

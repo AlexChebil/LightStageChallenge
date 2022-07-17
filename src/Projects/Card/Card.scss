@@ -10,12 +10,23 @@
 
 
     .upperSection {
-        margin: 1em;
+        margin-top: 2em;
+        display: flex;
+        align-items: center;
+        //justify-content: center;
+
+        #projectAvatar {
+            margin-right: 1em;
+            box-shadow: 2px 2px 5px black;
+            border-radius: .25em;
+        }
 
         h4 {
 
-            margin: 0em;
+            margin: 0;
+            line-height: 1.5em;
         }
+
     }
 
     .middleSection {

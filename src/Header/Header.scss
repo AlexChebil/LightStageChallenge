@@ -53,4 +53,10 @@
         font-size: 2.25em;
         text-align: center;
     }
+
+    #bannerCaption {
+        float: right;
+        margin: 0em 2em;
+        transform: translateY(-2em);
+    }
 }
