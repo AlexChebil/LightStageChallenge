@@ -11,7 +11,7 @@
 @media all and (min-width:320px) and (max-width:600px) {
 
     .inputContainer #searchInput {
-        top: 40%;
+        top: 27em;
         width: 28em;
 
     }
@@ -31,5 +31,12 @@
         top: 38.5em;
         width: 47em;
 
+    }
+}
+
+@media all and (min-width:1001px) and (max-width:1366px) {
+    .inputContainer #searchInput {
+        top: 38.5em;
+        width: 47em;
     }
 }
